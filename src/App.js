@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { getDatabase, onValue, push, ref, remove } from 'firebase/database';
 
 function App() {
-  const [books, setBooks] = useState([{key: "abc", name: "frog" }]);
+  const [books, setBooks] = useState([{ key: "abc", name: "frog" }]);
   const [userInput, setUserInput] = useState("");
 
   const handleInputChange = (event) => {
@@ -48,8 +48,6 @@ function App() {
 
     })
   }, []);
-
-  const unusedVar = [];
 
   return (
     <div>
