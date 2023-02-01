@@ -49,6 +49,8 @@ function App() {
     })
   }, []);
 
+  const unusedVar = [];
+
   return (
     <div>
       <h1>Bookshelf</h1>
